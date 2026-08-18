@@ -1,8 +1,4 @@
-﻿using System.CommandLine.Invocation;
-using System.ComponentModel;
-using System.Data;
-using System.Runtime.InteropServices.Marshalling;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 
 namespace Task_Tracker_CLI
@@ -10,7 +6,7 @@ namespace Task_Tracker_CLI
     internal class Program
     {
         public const string filePathJson = "tasks.json";
-        
+
         public static List<Task> tasks = new List<Task>();
 
         public const string commandList = "-----Task Tracker------\n"

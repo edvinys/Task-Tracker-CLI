@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Task_Tracker_CLI
+﻿namespace Task_Tracker_CLI
 {
     internal class CommandHandler
     {
@@ -117,7 +109,7 @@ namespace Task_Tracker_CLI
             }
 
             Program.SaveInJson(tasks);
-            
+
             List<Task> needChange = tasks.FindAll(task => task.Name == taskName);
 
             if (needChange.Count == 0)
@@ -136,7 +128,7 @@ namespace Task_Tracker_CLI
         }
         private static void ChangeTaskStatus(List<Task> tasks, string newStatus)
         {
-            foreach(Task task in tasks)
+            foreach (Task task in tasks)
             {
                 task.State = newStatus;
             }
