@@ -1,1 +1,9 @@
-a
+- First head to the releases tab and download the "TaskTracker.rar".
+- Extract the zip.
+- Open the folder and launch "TaskTracker.exe"
+- App should launch in a command line.
+- Type "add" to add a task.
+- Type "remove" to remove a task.
+- Type "change" to change a task's status.
+- Type "status" to check the status of all your tasks.
+- Tasks are kept locally in tasks.json.
